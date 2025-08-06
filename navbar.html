@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Effective Interactive Navbar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <span class="nav-brand">MyInternship</span>
+      <button 
+        class="nav-toggle" 
+        id="nav-toggle" 
+        aria-label="Open Menu" 
+        aria-controls="nav-menu" 
+        aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Demo sections for scrolling -->
+  <section id="home"><h1>Home</h1></section>
+  <section id="about"><h1>About</h1></section>
+  <section id="skills"><h1>Skills</h1></section>
+  <section id="projects"><h1>Projects</h1></section>
+  <section id="contact"><h1>Contact</h1></section>
+
+  <script src="navbar.js"></script>
+</body>
+</html>
